@@ -1,0 +1,74 @@
+.wrapper {
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.wrapper .parentTab,
+.wrapper .childTab {
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parentTab label,
+.wrapper .childTab label {
+  background: #007bff;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+}
+
+.wrapper label span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.childTab label span {
+  font-size: 17px;
+}
+
+.wrapper label .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  color: #007bff;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.wrapper label .icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .parentTab .content,
+.wrapper .childTab .subContent {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 400ms ease;
+}
+
+.parentTab input:checked ~ .content {
+  max-height: 100vh;
+}
+
+.wrapper .parentTab .content p,
+.wrapper .childTab .subContent p {
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.wrapper input {
+  display: none;
+}
