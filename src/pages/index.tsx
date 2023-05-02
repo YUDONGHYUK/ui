@@ -1,6 +1,13 @@
 import Link from 'next/link';
 
-const LINKS = [{ name: 'accordion', title: 'Accordion', url: '/accordion' }];
+const LINKS = [
+  { name: 'accordion', title: 'Accordion', url: '/accordion' },
+  {
+    name: 'button',
+    title: 'Button',
+    url: '/button',
+  },
+];
 
 export default function Home() {
   return (
