@@ -7,6 +7,7 @@ const LINKS = [
     title: 'Button',
     url: '/button',
   },
+  { name: 'star-rating', title: 'StarRating', url: '/star-rating' },
 ];
 
 export default function Home() {
