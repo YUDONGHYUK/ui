@@ -8,6 +8,11 @@ const LINKS = [
     url: '/button',
   },
   { name: 'star-rating', title: 'StarRating', url: '/star-rating' },
+  {
+    name: 'increment-decrement-num',
+    title: 'IncrementDecrementNum',
+    url: '/increment-decrement-num',
+  },
 ];
 
 export default function Home() {
